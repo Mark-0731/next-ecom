@@ -76,7 +76,7 @@ const CartItem = ({item}: {item: CartItemType}) => {
 }
 
 const Cart = () => {
-    const { cartId, removeItem, updateQuantity, items, close, isOpen, syncWithUser, setLoaded, getTotalPrice, getTotalItems } = useCartStore(
+    const { cartId, items, close, isOpen, syncWithUser, setLoaded, getTotalPrice, getTotalItems } = useCartStore(
         useShallow((state) => ({
             cartId: state.cartId,
             removeItem: state.removeItem,

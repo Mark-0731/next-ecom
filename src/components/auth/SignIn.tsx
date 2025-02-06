@@ -9,7 +9,7 @@ const initialState = {
 };
 
 type SignInProps = {
-    action: (prevState: any, formData: FormData) => Promise<{ message: string } | undefined>;
+    action: (prevState: unknown, formData: FormData) => Promise<{ message: string } | undefined>;
 };
 
 const SignIn = ({ action }: SignInProps) => {
