@@ -9,6 +9,7 @@ import Cart from '@/components/cart/Cart';
 import Script from 'next/script';
 import { Suspense } from 'react';
 import AnalyticsTracker from '@/components/layout/AnalyticsTracker';
+import { Analytics } from '@vercel/analytics/react';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -36,6 +37,7 @@ const RootLayout = async ({
                     data-website-id='(YOUR UMAMI WEBSITE ID)'
                     strategy='beforeInteractive'
                 />
+                  <Analytics />
 
                 <Suspense>
                     <AnalyticsTracker
